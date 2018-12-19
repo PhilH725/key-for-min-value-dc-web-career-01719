@@ -2,20 +2,17 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  sorter = []
-  for i in range(1, name_hash.length)
-    name_hash.each do |name, amount|
-      if i == 1
-        sorter << {name => amount}
-      else
-        if amount < sorter[0]
-          sorter << {name => amount}
-        end
+  lowest = ''
+  name_hash.each do |name, amount|
+    if lowest.is_i?
+      if amount < lowest
+        lowest = amount
+        low_name = name
       end
-    end
-    if sorter.length != 1
-      sorter = []
+    else
+      lowest = amount
+      low_name = name
     end
   end
-  sorter
+  low_name
 end
