@@ -3,10 +3,9 @@
 
 def key_for_min_value(name_hash)
   sorter = []
-  for i in range(1, )
-    counter = 1
+  for i in range(1, name_hash.length)
     name_hash.each do |name, amount|
-      if counter == 1
+      if i == 1
         sorter << {name => amount}
       else
         if amount < sorter[0]
@@ -14,7 +13,6 @@ def key_for_min_value(name_hash)
         end
       end
     end
-    counter += 1
     if sorter.length != 1
       sorter = []
     end
