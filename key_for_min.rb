@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   while sorter.length != 1
     counter = 1
     name_hash.each do |name, amount|
-      if counter = 1
+      if counter == 1
         sorter << {name => amount}
       else
         if amount < sorter[0]
