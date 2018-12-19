@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   sorter = []
-  while sorter.length != 1
+  for i in range(1, )
     counter = 1
     name_hash.each do |name, amount|
       if counter == 1
