@@ -3,6 +3,7 @@
 
 def key_for_min_value(name_hash)
   lowest = false
+  low_name = ''
   name_hash.each do |name, amount|
     if lowest
       if amount < lowest
