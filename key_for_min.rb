@@ -17,4 +17,5 @@ def key_for_min_value(name_hash)
       sorter = []
     end
   end
+  sorter
 end
